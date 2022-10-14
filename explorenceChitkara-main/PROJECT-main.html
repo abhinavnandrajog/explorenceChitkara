@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Content Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/jpg" href="1.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Original+Surfer&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Pinyon+Script&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="PROJECT-main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="jquery-3.5.1.js"></script>
+	<script src="PROJECT-main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+	
+</head>
+
+<body>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-info">
+        <a class="navbar-brand" href="#"><img class="logo" src="1.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#tech">TECHNOLOGY <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#speak">SPEAKING</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#culture">CULTURE</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="#department">DEPARTMENT</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link open-button" id="query" onclick="openForm()">QUERY</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<div class="main background-explore" onmouseover="typeWriter()">
+	<p class="Explore">Explore</p>
+	<p class="para-quote quote-tech" id="tech"></p>
+</div>
+
+<div class="Societies" id="technology">
+	<div class="flip-card">
+		<div class="flip-card-inner">
+	        <div class="flip-card-front" ><img class="club-logo" src="ACM.png"></div>
+			<div class="flip-card-back" id="acm"><h1>ACM</h1> 
+				<p>This Chapter aims at creating a technomotive environment for the students of the Computer Science field apart from the regular course content.</p> </div>
+			</div>
+			</div>
+
+
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front" ><img class="club-logo" src="IEEE.png"></div>
+					<div class="flip-card-back" id="iee"><h1>IEEE</h1> 
+						<p>IEEE aim at developing skills in latest technologies through expert sessions and workshops and leveraging the skills for solving challenges by organizing codeathons, hackathons and other such events.</p> </div>
+				</div>
+			</div>
+
+
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front" ><img class="club-logo" src="IEI.png"></div>
+					<div class="flip-card-back" id="iei"><h1>IEI</h1> 
+								<p>The Institution of Engineers (India) [IEI] is a statutory body to promote and advance the engineering and technology, established in 1920 and incorporated by Royal Charter in 1935..</p> </div>
+				</div>
+			</div>
+
+
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front" ><img class="club-logo" src="DSC.jpg"></div>
+					<div class="flip-card-back" id="dsc"><h1>DSC</h1> 
+								<p>By joining a DSC, students build their professional and personal network, get access to Google Developer Resources, and work together to build solutions for local problems.</p> </div>
+				</div>
+			</div>
+
+
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front" ><img class="club-logo" src="CSI.jfif"></div>
+					<div class="flip-card-back" id="csi"><h1>CSI</h1> 
+							<p>CSI,for the benefit of members, the chapter organizes monthly technical meetings, product presentations, exhibitions, film and video shows.</p> </div>
+				</div>
+			</div>
+
+									
+
+			<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front" ><img class="club-logo" src="codechef.png"></div>
+						<div class="flip-card-back" id="codechef"><h1>Codechef</h1> 
+							<p>CodeChef promotes constant learning and friendly programming competitions for its users, along with the support of its large community of problem curators. </p> </div>
+					</div>
+			</div>
+											
+			<div class="flip-card">
+					<div class="flip-card-inner">
+							<div class="flip-card-front" ><img class="club-logo" src="iste.png"></div>
+							<div class="flip-card-back" id="iste"><h1>ISTE</h1> 
+								<p>The ISTE aims to spread awareness among its members in addition, to making them realise their role and responsibility regarding technical education for the advancement of general welfare.</p> </div>
+				</div>
+			</div>
+
+		<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front" ><img class="club-logo" src="curin.png"></div>
+				<div class="flip-card-back" id="curin"><h1>Curin</h1> 
+					<p>CURIN is involved in cutting edge research, exploring new technologies to improve the country’s infrastructure and safety — and contributing to society through many other discoveries and innovations.</p> </div>
+			</div>
+		</div>
+
+		<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front" ><img class="club-logo" src="asme.png"></div>
+					<div class="flip-card-back" id="asme"><h1>ASME</h1> 
+							<p>ASME is a not-for-profit professional organization that enables collaboration, knowledge sharing and skill development , while promoting the vital role of the engineers in society.</p> </div>
+				</div>
+		</div>
+
+		<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front" ><img class="club-logo" src="ecell.jpg"></div>
+					<div class="flip-card-back" id="ecell"><h1>ECELL</h1> 
+						<p>CEED E-Cell is an entrepreneurship development endeavor of Chitkara University to develop a mind set of being an entrepreneur while a student is in its academic tenure. </p> </div>
+				</div>
+		</div>
+												
+	</div>
+
+		<div class="Main background-literature" id="speak" onmouseover="typeWriter2()">
+				<p id="speaking"></p>
+		</div>
+		
+	<div class="Societies">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front" ><img class="club-logo" src="Toastmaster.jpg"></div>
+					<div class="flip-card-back" id="toastmaster"><h1>Toastmasters</h1> 
+						<p>Chitkara University had introduced the Toastmasters’ Club at the University and the aim was to instill confidence among students to take on the world in poised manner.</p> </div>
+			</div>
+		</div>
+	
+	     <div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front" ><img class="club-logo" src="literayllis.jpg"></div>
+					<div class="flip-card-back c2s2"><h1>Literayllis</h1> 
+						<p>"What is wonderful about great literature is that it transforms the man who reads it towards the condition of the man who wrote, and brings to birth in us also the creative impulse."</p> </div>
+				</div>
+		</div>
+	</div>
+
+<div class="main background-culture" onmouseover="typeWriter3()" id="culture">
+	<p class="Main" id="CULTURE"></p>
+</div>
+
+<div class="Societies">
+	<div class="flip-card">
+		<div class="flip-card-inner">
+			<div class="flip-card-front" ><img class="club-logo" src="theatre.jpg"></div>
+			<div class="flip-card-back c2s2"><h1>Theatre</h1> 
+				<p>"Acting is a skill. On stage you must be ready to perform. Your concentration must be keen, your reflexes sharp; your body and mind are in top gear, the chase is on."</p> </div>
+			</div>
+			</div>
+	<div class="flip-card">
+		<div class="flip-card-inner">
+			<div class="flip-card-front" ><img class="club-logo" src="custody.jpg"></div>
+			<div class="flip-card-back c2s2"><h1>Custody</h1> 
+						<p>"Practice like you've never won. Perform like you've never lost.Dancing is the language of soul."</p> </div>
+			</div>
+			</div>
+	<div class="flip-card">
+		<div class="flip-card-inner">
+			<div class="flip-card-front" ><img class="club-logo" src="natraj.jpg"></div>
+			<div class="flip-card-back c2s2"><h1>Natraj</h1> 
+				<p>"Dance as the narration of a magical story; that recites on lips, illuminates imaginations and embraces the most sacred depths of souls.” “If spirit is the seed, Kathak is the water of its evolution." </p> </div>
+			</div>
+		</div>
+
+
+	<div class="flip-card">
+		<div class="flip-card-inner">
+			<div class="flip-card-front" ><img class="club-logo" src="panache.jpg"></div>
+			<div class="flip-card-back c2s2"><h1>Panache</h1> 
+					<p>"Modeling is not just beauty and smile, it takes boldness and style."</p> </div>
+			</div>
+		</div>
+
+	<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front" ><img class="club-logo" src="tasveer.jpg"></div>
+				<div class="flip-card-back c2s2"><h1>Tasveer</h1> 
+						<p>"Taking an image, freezing a moment, reveals how rich reality truly is."</p> </div>
+			</div>
+		</div>
+	<div class="flip-card">
+		<div class="flip-card-inner">
+			<div class="flip-card-front" ><img class="club-logo" src="bhangra.jpg"></div>
+			<div class="flip-card-back c2s2"><h1>Bhangra</h1> 
+					<p>"Punjabi Gabhru are no less ! Bhangra is pure love for them !".</p> </div>
+		</div>
+	</div>
+	<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front" ><img class="club-logo" src="dhwani.jpg"></div>
+				<div class="flip-card-back c2s2"><h1>Dhwani</h1> 
+						<p>"Music gives a soul to the universe , wings to the mind , flight to the imagination  and life to everything".</p> </div>
+				</div>
+	</div>
+	
+	<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front" ><img class="club-logo" src="lethal.jpg"></div>
+				<div class="flip-card-back c2s2"><h1>Lethal</h1> 
+					<p>"Everyone has their unique way to express happiness . Similiarly "punjabi mutiyaran" find pleasure in performing gidda whenever they want to show how happy and contented they are.".</p> </div>
+		</div>
+	</div>
+
+	<div class="flip-card">
+			<div class="flip-card-inner">
+			<div class="flip-card-front" ><img class="club-logo" src="reflection.jpg"></div>
+				<div class="flip-card-back c2s2"><h1>Reflection</h1> 
+					<p>"Being an artist is the same as being a wizard , only instead of a wand u use a paint brush and some color."</p> </div>
+			</div>
+	</div>
+</div>
+
+
+<div class="Main background-department" id="department" onmouseover="typeWriter4()">
+	<p id="DEPARTMENT">
+    </p>
+</div>
+
+<div class="Societies">
+
+	<div class="flip-card">
+		<div class="flip-card-inner">
+			<div class="flip-card-front" ><img class="club-logo" src="bitsnbytes.jpg"></div>
+			<div class="flip-card-back" id="bnb"><h1>Bits&Bytes</h1> 
+				<p> Bits&Bytes society is to create an environment that will help the students to explore their potential, and provide them a platform to pursue and excel in managerial and technical jobs, as well as in cultural events.</p> </div>
+		</div>
+	</div>
+
+	<div class="flip-card">
+		<div class="flip-card-inner">
+			<div class="flip-card-front" ><img class="club-logo" src="epic youth.jpg"></div>
+			<div class="flip-card-back" id="epic"><h1>Epic Youth Club</h1> 
+				<p> With a vision of giving more exposure to students also giving them a reason to step out of their hostel rooms and network with each other.</p> </div>
+		</div>
+	</div>
+
+	<div class="flip-card">
+		<div class="flip-card-inner">
+			<div class="flip-card-front" ><img class="club-logo" src="seagulls.png"></div>
+			<div class="flip-card-back" id="seagulls"><h1>Seagulls</h1> 
+					<p>The role of the club is to collect and share information related to student welfare activities, inter-departmental activities and Intra-departmental activities taking place in the university.</p> </div>
+		</div>
+	</div>
+
+	<div class="flip-card">
+		<div class="flip-card-inner">
+			<div class="flip-card-front" ><img class="club-logo" src="Mechstein.png"></div>
+			<div class="flip-card-back" id="mechstein"><h1>Mechstein</h1> 
+					<p> MECHSTEIN club strives to create a social atmosphere for all mechanical engineers while representing undergraduate students’ interests within the Mechanical Engineering Department.</p> </div>
+		</div>
+	</div>
+
+	<div class="flip-card">
+		<div class="flip-card-inner">
+			<div class="flip-card-front" ><img class="club-logo" src="nss.jpg"></div>
+			<div class="flip-card-back" id="nss"><h1>NSS</h1> 
+					<p>It provides opportunity to the youth of India to take part in various government led community service activities & programmes.Aims at providing hands on experience to young students in community service.</p> </div>
+		</div>
+	</div>
+</div>
+
+
+	<div class="navbar-dark bg-info">
+		<p class="copyright">Copyright &copy; 2021 - All rights Reserved </p>
+	</div>
+	
+	
+</body>
+</html>

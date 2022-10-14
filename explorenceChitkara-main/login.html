@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <title>login</title><link rel="shortcut icon" type="image/jpg" href="1.png">
+<link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="login.css">
+<script src="jquery-3.5.1.js"></script>
+
+<div id="back">
+    <div class="backRight"></div>
+    <div class="backLeft"></div>
+  </div>
+  
+  <div id="slideBox">
+    <div class="topLayer">
+      <div class="left">
+        <div class="content">
+          <h2>Sign Up</h2>
+            <div class="form-group">
+                <i class="fa fa-user icon"></i>        
+                <input type="text" placeholder="Name"><br>
+              <i class="fa fa-envelope icon"></i>      
+              <input type="email" placeholder="Email" id="email"/><br>
+              <i class="fa fa-key icon"></i>
+              <input type="password" placeholder="Password" id="password">
+            </div>
+           
+          <button id="goLeft" class="off">Login</button>
+          <button onclick="signUp()">Sign up</button>
+        </div>
+      </div>
+      <div class="right" id="login_div">
+        <div class="content">
+          <h2>Login</h2>
+            <div class="form-group">
+                <i class="fa fa-envelope icon"></i> 
+                <input type="email" placeholder="Email" id="email_field">
+             <br>
+             <i class="fa fa-key icon"></i>
+             <input type="password" placeholder="Password" id="password_field">
+            </div>
+            <button id="goRight" class="off">Sign Up</button>
+            <button id="login" type="submit" onclick="login()">Login</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC14OPsNOeKhVLyA6n4oCwWwUT-Ldham_E",
+    authDomain: "explore-de468.firebaseapp.com",
+    projectId: "explore-de468",
+    storageBucket: "explore-de468.appspot.com",
+    messagingSenderId: "658761095522",
+    appId: "1:658761095522:web:2c4b9a56dffe12f1e2743b"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+  <script src="login.js"></script>
+  <script src="firebase.js"></script>
+  </html>

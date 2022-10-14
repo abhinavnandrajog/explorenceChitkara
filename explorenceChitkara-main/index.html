@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main Page</title>
+	<link rel="shortcut icon" type="image/jpg" href="1.png">
+	<link rel="stylesheet" type="text/css" href="PROJECT.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="jquery-3.5.1"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="PROJECT.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+</head>
+
+
+
+<body id="body" class="light-mode"> 
+<script>
+window.addEventListener('mouseover', initLandbot, { once: true });
+window.addEventListener('touchstart', initLandbot, { once: true });
+var myLandbot;
+function initLandbot() {
+  if (!myLandbot) {
+    var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+    s.addEventListener('load', function() {
+      var myLandbot = new Landbot.Livechat({
+        configUrl: 'https://chats.landbot.io/v3/H-960446-71XMCJE8P4CLO8EP/index.json',
+      });
+    });
+    s.src = 'https://static.landbot.io/landbot-3/landbot-3.0.0.js';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  }
+}
+</script>
+	<div id="head" class="background light-mode">
+		<div>
+		<ul id="navbar" class="nav text-blue flex">
+			<li>Achieving Milestones</p></li>
+			<li class="right"><button class="login-button text-blue">Login</button>
+		<label class="switch">
+			<input type="checkbox" id="darkmode" type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode" checked>
+			<span class="slider round"></span>
+			</label>
+    <heading class="dropdown">
+            <button class="btn dropdown-btn"
+                    type="button" 
+                    id="dropdownMenuButton" 
+                    data-toggle="dropdown" 
+                    aria-haspopup="true" 
+                    aria-expanded="false">
+                <img id="navicon" src="https://img.icons8.com/fluent/96/4a90e2/menu--v1.png"/>
+            </button>
+            
+            <div class="dropdown-menu" 
+                 aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#About">
+                  About
+              </a>
+                <a class="dropdown-item" href="#Our-team">
+                  Our-Team
+              </a>
+                <a class="dropdown-item" href="#Event-slider">
+                  Events
+              </a>
+              <a class="dropdown-item" href="#getin">
+                  Get in Touch
+              </a>
+            </div>
+        </heading>
+			</li>
+		</ul>
+	  </div>
+
+		<div class="align">
+		<p><img src="1.png" id="logo"></p>
+	    </div>
+	    <div class="align">
+		<P id="EXPLORENCE" class="white">EXPLORENCE</P>
+	    </div>
+	</div>
+
+	<div id="About">
+	<h1 id="About-heading" class="flex">Why Explorence?</h1>
+	<p id="about-para" class="flex">“Explore your Potential” is what Chitkara University believes in  .  We  at Explorence , are here to take this forward by helping Chitkarians to actually Explore their real selves! This platform aims at providing detailed information regarding all the clubs , societies and student chapters of our university and the past and also the upcoming events conducted by them. We are also providing every kind of registration and payment portals for your ease . Stay Tuned with us for each kind of update.</p>		
+	</div>
+
+
+	<div id="Our-team">
+		<h1 id="team-head" class="flex text-blue">Who Are We?</h1>
+		<ul type="none" class="white nav flex" id="team-name">
+			<li class="nav-link team-animation-left">
+				<img id="team-member" src="Aayushi.jpeg">
+				<figcaption><b>Aayushi Gupta</b></figcaption>
+		    </li>
+			<li class="nav-link team-animation-center">
+				<img src="abhinav.jpg" id="team-member">
+				<figcaption><b>Abhinav Nandrajog</b></figcaption>
+			</li>
+			<li class="nav-link team-animation-right" id="Member-3">
+				<img src="chitra.jpg" id="team-member">
+				<figcaption><b>Chitra Karayat</b></figcaption>
+			</li>
+		</ul>
+	</div>
+
+
+<div class="what-is-up"><h1 class="text-blue">What is Up?</h1></div>
+	<div id="Event-slider">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 Slider-Event" src="codeWar (3).jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 Slider-Event" src="codeWar (1).jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 Slider-Event" src="codeWar (2).jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+		
+	</div>
+
+
+	<div class="flex" id="upcomingPastEvents">
+
+		<div class="beige Events-div light-blue event-animation-left">
+			<h1>
+				Recent Events
+			</h1>
+
+			<ul type="none" class="event-list">
+				<li><a class="beige" href="https://forms.gle/tKxSRLnMyTRfMu5g9">GitHub</a></li>
+				<li><a class="beige" href="https://docs.google.com/forms/d/e/1FAIpQLSdv9hFYHn2Rcf3r8aVBYrnKIhiPbjUoGBMVq2TYUr3NCyalHg/closedform">WordWar</a></li>
+				<li><a class="beige" href="https://forms.gle/iUDYsLQPYgLJrcq77">Startup Webinar</a></li>
+				<li><a class="beige" href="https://chat.whatsapp.com/FKKg7gT7pBeCaU3QRDb3wF">HackWithHer</a></li>
+
+			</ul>
+		</div>
+
+		<div class="Events-div light-blue beige event-animation-right">
+		     <h1>
+		     	Upcoming Events
+		     </h1>		
+
+		     <ul type="none" class="event-list">
+				<li><a class="beige" href="https://forms.gle/7tUKTV1EHqv6PhZj9">RedHat</a></li>
+				<li><a class="beige" href="https://forms.gle/MEqEDnwrzKuQXpGN9">ICPC</a></li>
+				<li><a class="beige" href="https://forms.gle/Zz8v7Eoxi46j5Cha9">Mother's Day Celebrations</a></li>
+				<li><a class="beige" href="https://forms.gle/pwpvvG872xKW1j8F6">CodeWars</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+
+
+
+
+	<div id="contact" class="beige light-mode">
+	<div class="flexing">
+
+        <div id="contact-container">
+		<h1 id="getin" >
+            GET IN TOUCH
+        </h1>
+            <div id="contact-form-container">
+                <form id="contact-form">
+                    <input id="name" name="name" type="text" placeholder="Your Name">
+                    <input id="email" required name="email" type="text"  placeholder="Your Email">
+                    <textarea id="message" required name="message"  rows="1" cols=40 placeholder="Message"></textarea>
+                    <button class="sub-btn" id="submit" name="btn-send" type="submit">
+						Send Feedback
+						</button>
+                    </form>
+            </div>
+            <!-- Div that Contains text -->
+           
+        </div> <!--Contact Container div ends here-->
+	</div>
+	
+	<!-- Contact -->
+
+	<div class="contactno">
+		<h1 id="contact1">Contact Us </h1>
+	</div>
+	<br>
+	<div class="contactno">
+		<h5 id="contact2">Phone : +916824665396</h5>
+	</div>
+	<div class="contactno">
+		<h5 id="conatct3"><a class="text-blue" href = "mailto:explorencechitkara@gmail.com?">Email : explorencechitkara@gmail.com</a></h5>
+	</div>
+	
+	<!-- Icons -->
+<div class="flexing">
+	<div class="icons grow" id="facebook">
+	<img src="https://img.icons8.com/fluency/48/000000/facebook.png"/>
+	</div>
+	<div class="icons grow" id="instagram">
+		<img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
+	</div>
+	<div class="icons grow" id="linkedin">
+		<img src="https://img.icons8.com/fluency/48/000000/linkedin.png"/>
+	</div>
+	<div class="icons grow" id="twitter">
+		<img src="https://img.icons8.com/fluency/48/000000/twitter-circled.png"/>
+	</div>
+	<div class="icons grow" id="whatsapp">
+		<img src="https://img.icons8.com/fluency/48/000000/whatsapp.png"/>
+	</div>
+</div>
+
+<div class="copyright">
+	<p>Copyright &copy; 2021. Explorence</p>
+	<p><a class="text-blue" href="">Designed and Developed by Chitra, Aayushi, Abhinav</a></p>
+	<p><a href="" class="text-blue">Privacy Policies</a></p>
+</div>
+
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="feedback.js"></script>
+</html>
